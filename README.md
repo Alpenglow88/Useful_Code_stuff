@@ -11,3 +11,11 @@ Currently this repo supports the following languages to some degree or another:
 
 * [Ruby](./ruby.rb)
 * [Javascript](./javascript.js)
+
+# Test files
+There are test files that are included here so that you can try out any piece of code to make sure it does what you expect. In order to run these you simply need to run the commands listed in the table below. You will need to ensure you have the correct things installed to run the files so check the prerequisites before running them,
+
+|Language|Prerequisites|Command|
+|----------|-------------|----------|
+|Ruby|Ruby|ruby test.rb|
+|Javascript|Node|node test.rb|
