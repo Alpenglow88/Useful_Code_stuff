@@ -171,4 +171,3 @@ const unknown3 = true;
 console.log(typeof unknown3); // Output: boolean
 
 // -----------------------------------------
-
