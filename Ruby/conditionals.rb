@@ -162,3 +162,16 @@ else
 end
 
 # -----------------------------------------
+
+# Conditional syntax
+# Ruby allows you to append conditionals to the end which allows for simplified coding
+
+# Example 1
+
+x = 3
+puts 'x is 3' if x == 3
+
+# Example 2
+
+x = 4
+puts 'x is not 3' unless x == 3

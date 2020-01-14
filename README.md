@@ -1,5 +1,5 @@
 # Useful_Code_stuff
-A repo containing useful snippets of coding in multiple languages
+A repo containing useful snippets of coding in multiple languages - often taken from training courses and other online sources
 
 Whenever I learn something new in a language I like to keep track of it so here is where I have documented some useful bits of code that I have come across and things they are used for.
 
