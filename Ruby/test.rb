@@ -1,8 +1,15 @@
 # frozen_string_literal: true
 
-string = "23.567"
+value = 'string'
+puts value.is_a? Array
+puts value.is_a? Numeric
+puts value.is_a? Integer
+puts value.is_a? String
+puts value.is_a? Range
 
-puts string.to_i
-puts string.to_f
-puts string.to_r
-puts string.to_c
+value = 'string'
+puts value.is_a? Array
+puts value.is_a? Numeric
+puts value.is_a? Integer
+puts value.is_a? String
+puts value.is_a? Range

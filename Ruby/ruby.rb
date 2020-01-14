@@ -11,6 +11,7 @@ puts 'example_string' # outputs the string "example_string"
 puts "\n" # outputs a newline - note double quotation marks
 
 value = 'string'
+puts "example_" + value # outputs the string "example_" and an external variable called "value" giving the output of "example_string"
 puts "example_#{value}" # outputs the combination of "example_" and an external variable called "value" giving the output "example_string". NOTE the double " used over the single '
 
 # -----------------------------------------
@@ -85,39 +86,67 @@ puts rand * 50 # Prints a random number between 0 and 1 and multiplies it by 50
 puts rand(1..10) # Prints a random number from 1 up to (and including) 10
 puts rand(1...10) # Prints a random number from 1 up to (but not including) 10
 
+puts '23.567'.to_i # Outputs given string as an integer (23)
+puts 'hello'.to_i # Outputs given string as "0"
+
+puts '23.567'.to_f # Outputs given string as an floating number (23.567)
+puts 'hello'.to_f # Outputs given string as "0"
+
 # -----------------------------------------
 
-# Split array separated by ',' (can be reused for any separating character)
-# ```ruby
-#     X = <values>.split(',')
-# ```
+# Variables
+# Global - Local -
 
-# Join array separated by ',' (can be reused for any separating character)
-# ```ruby
-#     X = <values>.join(',')
-# ```
+# Global
+# Can be accessed from any part of the program
+# If not initialised then a global has a value of "nil"
+# Global variables are frowned on in recently accepted syntax guidlines
 
-# ```ruby
-# # Loop through input value until condition is met with built in cyclical timeout
-#     n = 0
-#     until <condition>
-#       n += 1
-#       # 2000 Represents the number of rotations through code to avoid getting stuck in never ending loop. Configurable as needed.
-#       break if n == 2000
-#     end
-# ```
+$global = 'example'
+puts $global
 
-# Returns the corresponding value found in a hash table
+# Local
+# Only accessible within the local block
 
-# ```ruby
-#   def hash_function(input)
-#     hash = {
-#       'input_value1' => 'hash_value_1',
-#       'input_value2' => 'hash_value_2',
-#       'input_value3' => 'hash_value_3',
-#     }
+local = 'example'
+puts local
 
-#     hash[input]
-#   end
+# -----------------------------------------
 
-# ```
+# Mathmatical Assignment Operators
+
+# Increase numeric variable value
+num = 1
+puts num # Outputs 1
+num += 1 # Can be written as num = num + 1
+puts num # Outputs 2 and variable reassigned as 2
+
+# Other operators can also be used
+x = 20
+x -= 5 # Can be written as x = x - 5
+puts x # Output: 15
+
+y = 50
+y *= 2 # Can be written as y = y * 2
+puts y # Output: 100
+
+z = 8
+z /= 2 # Can be written as z = z / 2
+puts z # Output: 4
+
+# -----------------------------------------
+
+# Type checking
+# is_a?
+# Below examples are indicative and there are more options that can be used
+# However Ruby requires the use to specifically ask about each type and cannot just return the type
+
+value = 'string'
+puts value.is_a? Array # Output False
+puts value.is_a? Numeric # Output False
+puts value.is_a? Integer # Output False
+puts value.is_a? String # Output False
+puts value.is_a? Range # Output False
+
+# -----------------------------------------
+
