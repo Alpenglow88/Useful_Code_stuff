@@ -1,15 +1,14 @@
 # frozen_string_literal: true
 
-value = 'string'
-puts value.is_a? Array
-puts value.is_a? Numeric
-puts value.is_a? Integer
-puts value.is_a? String
-puts value.is_a? Range
+grocery_item = 'papaya'
 
-value = 'string'
-puts value.is_a? Array
-puts value.is_a? Numeric
-puts value.is_a? Integer
-puts value.is_a? String
-puts value.is_a? Range
+case grocery_item
+when 'tomato'
+    puts 'Tomatoes are $0.49'
+when 'lime'
+    puts 'Limes are $1.49'
+when 'papaya'
+   puts  'Papayas are $1.29'
+else
+   puts  'Invalid item'
+end
