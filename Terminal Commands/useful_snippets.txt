@@ -1,0 +1,16 @@
+Run a command and store the terminal output to a log file
+
+    COMMAND > OUTPUT_FILE
+
+Example:
+
+    npm run > file.log
+---------------------
+Monitor in the terminal that which is being output into a log file
+
+    tail -f OUTPUT_FILE
+
+Example:
+
+    tail -f file.log
+---------------------
