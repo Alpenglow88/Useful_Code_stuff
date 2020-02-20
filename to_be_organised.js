@@ -1,3 +1,6 @@
+// Hidden features from Stack Overflow
+// https://stackoverflow.com/questions/61088/hidden-features-of-javascript
+-------------------------------------
 // WEBDRIVERIO 5
 // Check for child element being displayed within parent div
 
