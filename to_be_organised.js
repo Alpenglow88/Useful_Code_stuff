@@ -38,4 +38,11 @@ const childPresent = homePage.parentDiv
     return homePageElement;
   }
 }
+
+// EXAMPLE with header tag
+{
+  get headerTitle() {
+    return browser.$('#page-header-id h2');
+  }
+}
 -------------------------------------
