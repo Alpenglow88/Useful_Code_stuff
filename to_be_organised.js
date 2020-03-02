@@ -5,8 +5,8 @@
 // Check for child element being displayed within parent div
 
 const constant = PAGE.PAGE_OBJECT
-      .$(`selector`)
-      .isDisplayed();
+      .$(`selector`) // specifies the child element you are looking for
+      .isDisplayed(); // checks it is displayed
 
     expect(constant).to.be.true;
 
