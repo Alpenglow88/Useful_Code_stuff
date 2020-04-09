@@ -1,0 +1,79 @@
+# https://rubocop.readthedocs.io/en/latest/
+
+# require: rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+
+Metrics/AbcSize:
+  Enabled: true
+  Max: 60
+
+Metrics/BlockLength:
+  Enabled: true
+  Max: 120
+  CountComments: false
+
+Metrics/ClassLength:
+  Enabled: true
+  Max: 110
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+  Max: 6
+
+Layout/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 30
+  CountComments: false
+
+Metrics/ModuleLength:
+  Enabled: true
+  Max: 120
+  CountComments: false
+
+Metrics/PerceivedComplexity:
+  Enabled: true
+  Max: 10
+
+Naming/MemoizedInstanceVariableName:
+  EnforcedStyleForLeadingUnderscores: optional
+
+Style/AutoResourceCleanup:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: true
+
+Style/GuardClause:
+  Enabled: false
+
+Style/InlineComment:
+  Enabled: true
+
+Style/IpAddresses:
+  Enabled: true
+
+Style/MixinUsage:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
