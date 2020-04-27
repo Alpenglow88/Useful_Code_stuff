@@ -248,3 +248,10 @@ a.transpose
 # Transpose rows and columns of array of arrays a
 a.zip
 # Convert any arguments to arrays, then merge elements of array a with corresponding elements from each arg
+
+# Useful bits
+sum = 0
+array.each { |a| sum += a }
+puts sum
+
+# puts the sum of all array values
