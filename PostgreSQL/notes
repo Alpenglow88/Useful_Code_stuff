@@ -1,0 +1,36 @@
+-- Install via homebrew
+brew install postgresql
+
+-- run as daemon in background
+brew services start postgresql
+
+-- Update postgresql
+brew upgrade postgresql
+brew postgresql-upgrade-database
+brew services restart postgresql
+
+-- Access database application
+psql postgres
+
+-- Create a new database (within Postgres application)
+CREATE DATABASE <name>;
+
+-- Switch to database
+\c <name>
+
+-- Create a new table
+CREATE TABLE <name> (
+    column VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    pass VARCHAR(255) UNIQUE NOT NULL,
+
+);
+
+--  see available tables
+\dt
+
+-- delete a table
+DROP TABLE <name>
+
+-- quite psql
+\q
