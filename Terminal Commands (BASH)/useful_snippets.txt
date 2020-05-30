@@ -14,3 +14,16 @@ Example:
 
     tail -f file.log
 ---------------------
+
+list contents	ls	$ ls -l
+make directory	mkdir <dirname>	$ mkdir environment
+change directory	cd <dirname>	$ cd environment/
+cd one directory up		$ cd ..
+cd to home directory		$ cd ~ or just $ cd
+cd to path incl. home dir		$ cd ~/environment/
+move file (rename)	mv <source> <target>	$ mv foo bar
+copy file	cp <source> <target>	$ cp foo bar
+remove file	rm <file>	$ rm foo
+remove empty directory	rmdir <directory>	$ rmdir environment/
+remove nonempty directory	rm -rf <directory>	$ rm -rf tmp/
+concatenate & display file contents	cat <file>	$ cat ~/.ssh/id_rsa.pub
