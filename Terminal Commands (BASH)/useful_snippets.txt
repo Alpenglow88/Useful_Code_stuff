@@ -15,15 +15,19 @@ Example:
     tail -f file.log
 ---------------------
 
-list contents	ls	$ ls -l
-make directory	mkdir <dirname>	$ mkdir environment
-change directory	cd <dirname>	$ cd environment/
-cd one directory up		$ cd ..
-cd to home directory		$ cd ~ or just $ cd
-cd to path incl. home dir		$ cd ~/environment/
-move file (rename)	mv <source> <target>	$ mv foo bar
-copy file	cp <source> <target>	$ cp foo bar
-remove file	rm <file>	$ rm foo
-remove empty directory	rmdir <directory>	$ rmdir environment/
-remove nonempty directory	rm -rf <directory>	$ rm -rf tmp/
-concatenate & display file contents	cat <file>	$ cat ~/.ssh/id_rsa.pub
+list contents | $ ls
+list all contents | $ ls -a
+make directory | mkdir <dirname> | $ mkdir environment
+change directory | cd <dirname> | $ cd environment/
+cd one directory up	 | $ cd ..
+cd to home directory | $ cd ~ or just $ cd
+cd to path incl. home dir | $ cd ~/environment/
+create file  | touch <filename> | touch new_file.js
+move file (rename) | mv <source> <target> | $ mv foo bar
+copy file | cp <source> <target> | $ cp foo bar
+copy contents of file to clipboard  | pbcopy < <pathway_to_file> | pb copy < ~/.ssh/id_rsa.pub
+remove file | rm <file>	 | $ rm foo
+force remove file | rm -rf <file>	 | $ rm -rf foo
+remove empty directory | rmdir <directory> | $ rmdir environment/
+remove nonempty directory | rm -rf <directory> | $ rm -rf tmp/
+concatenate & display file contents | cat <file> | $ cat ~/.ssh/id_rsa.pub

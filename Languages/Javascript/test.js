@@ -2,6 +2,8 @@
 // //   console.log(arg + " world");
 // // }
 
+const { hasUncaughtExceptionCaptureCallback } = require("process");
+
 // // testFunction("one"); // Outputs "one world"
 // // testFunction(); // Outputs "hello world"
 // const date = new Date();
@@ -105,16 +107,31 @@
 //       }
 
 
-const testArray = [20, 86, 5, 17, 47, 9, 55, 11, 2, 18, 15, 23, 14, 6, 67, 24, 36, 21, 91, 68, 5, 4, 41, 22, 5, 18, 20, 8, 5, 12, 1, 52, 51, 4, 15, 7]
+const input = [20, 86, 5, 17, 47, 9, 55, 11, 2, 18, 15, 23, 14, 6, 67, 24, 36, 21, 91, 68, 5, 4, 41, 22, 5, 18, 20, 8, 5, 12, 1, 52, 51, 4, 15, 7]
+const negArray = [-1, -40]
+
+function getResults(testArray) {
+
 let resultArray = [];
+
 for (let x = 0; x < testArray.length; x++) {
+
   const value = testArray[x] % 26;
   let letter = "";
+
   if (value === 0) {
     letter = "Z";
   } else if (value > 0 && value <= 26) {
     letter = String.fromCharCode(96 + value).toUpperCase();
   }
+
   resultArray.push(letter);
 }
+
 console.log(resultArray.join(""));
+const result = resultArray.join("");
+return result
+
+}
+
+console.log(getResults(negArray))
