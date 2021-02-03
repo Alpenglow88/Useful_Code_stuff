@@ -4,30 +4,167 @@ Run a command and store the terminal output to a log file
 
 Example:
 
-    npm run > file.log
+    $ npm run > file.log
 ---------------------
-Monitor in the terminal that which is being output into a log file
+Output in the terminal that which is a file
 
     tail -f OUTPUT_FILE
 
 Example:
 
-    tail -f file.log
----------------------
+    $ tail -f file.log
 
-list contents | $ ls
-list all contents | $ ls -a
-make directory | mkdir <dirname> | $ mkdir environment
-change directory | cd <dirname> | $ cd environment/
-cd one directory up	 | $ cd ..
-cd to home directory | $ cd ~ or just $ cd
-cd to path incl. home dir | $ cd ~/environment/
-create file  | touch <filename> | touch new_file.js
-move file (rename) | mv <source> <target> | $ mv foo bar
-copy file | cp <source> <target> | $ cp foo bar
-copy contents of file to clipboard  | pbcopy < <pathway_to_file> | pb copy < ~/.ssh/id_rsa.pub
-remove file | rm <file>	 | $ rm foo
-force remove file | rm -rf <file>	 | $ rm -rf foo
-remove empty directory | rmdir <directory> | $ rmdir environment/
-remove nonempty directory | rm -rf <directory> | $ rm -rf tmp/
-concatenate & display file contents | cat <file> | $ cat ~/.ssh/id_rsa.pub
+Can also be used to quick view contents of file without opening text editor
+
+Example:
+
+    tail file.log
+---------------------
+List contents of current location
+
+    $ ls
+---------------------
+List all contents (including hidden files)
+
+    $ ls -a
+---------------------
+Make a directory 
+
+    mkdir <dirname> 
+
+Example:
+
+    $ mkdir environment 
+
+more options can create multiple dir - mkdir folder1 folder2 folder3
+---------------------
+Change directory
+
+    cd <dirname>
+    
+Example:
+
+    $ cd environment/
+---------------------
+Change directory - move one up
+
+    $ cd ..
+---------------------
+Change directory to home directory
+
+    $ cd ~
+    $ cd
+---------------------
+Change directory to path
+
+    $ cd ~/environment/
+
+This can be used from any location as you are specifying the pathway
+---------------------
+Create file
+
+    touch <filename>
+    
+Example:
+
+    touch new_file.js
+---------------------
+Open file
+
+    open <filename>
+    
+Example:
+    open file.log
+    
+This will open the file in a separate window as per the machine - finder window, text editor etc
+---------------------
+Open directory in finder
+
+    open .
+    
+This will open the directory in a separate finder window
+---------------------
+Move a file
+
+    mv <source> <target>
+    
+Example:
+    $ mv file.json hello/file.json    
+
+This can also be used to rename files if you specify the same pathway
+
+Example:
+
+    mv hello/file.json hello/new.json
+---------------------
+Copy a file
+
+    cp <source> <target>
+    
+Example:
+    
+    $ cp file.json hello/copy.json
+---------------------
+Copy contents of file to laptop clipboard
+
+    pbcopy < <pathway_to_file>
+    
+Example:
+
+    pbcopy < file.json
+---------------------
+Remove file
+
+    rm <file>
+    
+Example:
+
+    $ rm hello/foo.js
+---------------------
+Force remove file
+
+    rm -rf <file>
+    
+Example:
+
+    $ rm -rf hello/foo.js
+---------------------
+Remove empty directory
+
+    rmdir <directory>
+    
+Example:
+
+    $ rmdir environment/
+---------------------
+Remove nonempty directory
+
+    rm -rf <directory>
+    
+Example:
+
+    $ rm -rf tmp/
+---------------------
+Concatenate & display file contents
+
+    cat <file>
+    cat <file1> <file2> 
+    
+Example:
+
+    $ cat file.log
+    $ cat file.log file2.log
+
+---------------------
+Open file in VSCode
+
+    code <file_to_open>
+    
+Example:
+
+    code file.json
+---------------------
+Open directory in VSCode
+
+    code .
+---------------------
