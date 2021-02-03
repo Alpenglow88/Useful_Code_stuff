@@ -168,3 +168,32 @@ Open directory in VSCode
 
     code .
 ---------------------
+Search a file for a pattern
+
+    grep <search_pattern> <file_to_search>
+    
+Example:
+
+    grep hello file.json
+
+This will tell you that the pattern is present in the file but do nothing else
+---------------------
+Find a file pathway in a directory
+
+    find <directory> -name <filename>
+    
+Example:
+
+   find hello/ -name file.json
+
+This will tell you the pathway to the file you wanted and will dive down into all sub folders
+---------------------
+Sort the contents of a file in the console
+
+    sort <filename>
+    
+Example:
+
+   sort file.json
+
+---------------------
