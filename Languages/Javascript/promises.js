@@ -2,6 +2,8 @@
 // You can export to a store if you need to but you cannot return data from a promise to a synchronous
 // function or variable
 
+// This is using Axios package
+
 // -----------------------------------------
 
 // Regular JS call for importing Axios (an http client using promises)
