@@ -1,27 +1,41 @@
-require "uri"
-require "net/http"
-require "json"
-require "ffaker"
+require 'rest-client'
+require 'json'
 
-# url = URI("https://ghibliapi.herokuapp.com/films")
+api_url = 'https://restcountries.eu/rest/v2/'
+response = RestClient.get(api_url)
+rb = JSON.parse(response.body)
 
-# https = Net::HTTP.new(url.host, url.port);
-# https.use_ssl = true
+# puts JSON.pretty_generate(rb)
 
-# request = Net::HTTP::Get.new(url)
+# capital = rb[0]['capital']
+# currencies = rb[0]['currencies'][0]['name']
+# puts capital
+# puts rb[0]['currencies']
+# puts currencies
 
-# response = https.request(request)
-# rb = JSON.parse(response.body)
-
-# length = rb.length - 1
-
-# (0..length).each do |i|
-#     puts JSON.pretty_generate(rb[i]["director"])
-#   end
+# if currencies == 'British pound'
+#   puts 'true'
+# else
+#   puts 'false'
+# end
+# puts rb.length
 
 
-puts FFaker::Name.name 
+length = ((rb.length).to_i) -1
 
-(0..29).each do
-  puts FFaker::Name.name 
+(0..length).each do |i|
+  capital = rb[i]['capital']
+  puts i
+  if capital == "London"
+    
+  end
 end
+# currencies = rb[238]['currencies'][0]['name']
+
+# puts currencies
+# if currencies == 'British pound'
+#   puts 'true'
+# else
+#   puts 'false'
+# end
+# puts rb.length
