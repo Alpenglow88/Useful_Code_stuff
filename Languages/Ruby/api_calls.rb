@@ -2,7 +2,7 @@
 require 'rest-client' # https://github.com/rest-client/rest-client
 require 'json'
 
-# Define url and assin response variable
+# Define url and assign response variable
 api_url = 'https://restcountries.eu/rest/v2/'
 response = RestClient.get(api_url)
 rb = JSON.parse(response.body)
