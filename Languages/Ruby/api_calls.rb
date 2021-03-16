@@ -5,6 +5,7 @@ require 'json'
 # Define url and assign response variable
 api_url = 'https://restcountries.eu/rest/v2/'
 response = RestClient.get(api_url)
+# response = RestClient.get(api_url, { params: { key1: 'info 1' } })
 rb = JSON.parse(response.body)
 
 # -----------------------------------------

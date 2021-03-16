@@ -18,13 +18,13 @@ const axios = require("axios");
 // -----------------------------------------
 
 // Basic get request
-const url = "https://restcountries.eu/rest/v2/capital/london";
+const url = "https://ghibliapi.herokuapp.com/films";
 axios
   .get(url)
   // Full response
   .then((response) => console.log(response))
   // Only data of response
-  .then((response) => console.log(response.data))
+  .then((response) => console.log(response.data[0]))
   .catch((err) => console.log(err));
 
 // -----------------------------------------
@@ -99,6 +99,27 @@ axios({
 })
   .then((response) => console.log(response))
   .catch((err) => console.log(err));
-const url = "https://jsonp[laceholder.typicode.com/posts";
 
 // -----------------------------------------
+// EXAMPLES
+
+const url = "https://ghibliapi.herokuapp.com/films";
+axios
+  .get(url)
+  .then((response) => console.log(response))
+  .catch((err) => console.log(err));
+
+const url =
+  "http://api.napster.com/v2.2/artists/top?apikey=MzAyNTYxNDktM2RiMi00ZTY2LWJhZWMtMDI0MmU2ODE1YTU1";
+axios
+  .get(url)
+  .then((response) => console.log(response))
+  .catch((err) => console.log(err));
+
+const url = "http://api.napster.com/v2.2/artists/top";
+axios
+  .get(url, {
+    params: { apikey: "MzAyNTYxNDktM2RiMi00ZTY2LWJhZWMtMDI0MmU2ODE1YTU1" },
+  })
+  .then((response) => console.log(response.data))
+  .catch((err) => console.log(err));

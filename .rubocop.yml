@@ -3,8 +3,10 @@
 # require: rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.6
-  Exclude:
+  SuggestExtensions: false
+  NewCops: enable
+  TargetRubyVersion: 2.7.0
+  # Exclude:
 
 Layout/MultilineAssignmentLayout:
   Enabled: true
@@ -69,11 +71,3 @@ Style/MixinUsage:
 Style/NumericPredicate:
   Enabled: false
 
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
