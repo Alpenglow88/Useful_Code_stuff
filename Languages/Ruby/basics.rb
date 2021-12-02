@@ -145,7 +145,7 @@ value = 'string'
 puts value.is_a? Array # Output False
 puts value.is_a? Numeric # Output False
 puts value.is_a? Integer # Output False
-puts value.is_a? String # Output False
+puts value.is_a? String # Output True
 puts value.is_a? Range # Output False
 
 # -----------------------------------------
