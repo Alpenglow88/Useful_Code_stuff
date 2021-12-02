@@ -9,38 +9,46 @@ request(
     if (err) {
       return console.log(err);
     }
-    console.log(res.statusCode);
-    console.log(body);
-  }
-);
-// -----------------------------------------
+    // console.log(res.statusCode);
+    const nameUrl = body[8].people[0];
 
-request(
-  "http://api.napster.com/v2.2/artists/top?apikey=MzAyNTYxNDktM2RiMi00ZTY2LWJhZWMtMDI0MmU2ODE1YTU1",
-  {
-    json: true,
-  },
-  (err, res, body) => {
-    if (err) {
-      return console.log(err);
-    }
-    console.log(res.statusCode);
-    console.log(body);
+    request(nameUrl, { json: true }, (err, res, body) => {
+      if (err) {
+        return console.log(err);
+      }
+      console.log(body.name);
+    });
   }
 );
-// -----------------------------------------
 
-request(
-  "http://api.napster.com/v2.2/artists/top",
-  {
-    json: true,
-    qs: { apikey: "MzAyNTYxNDktM2RiMi00ZTY2LWJhZWMtMDI0MmU2ODE1YTU1" },
-  },
-  (err, res, body) => {
-    if (err) {
-      return console.log(err);
-    }
-    console.log(res.statusCode);
-    console.log(body.artists[0]);
-  }
-);
+// // -----------------------------------------
+
+// request(
+//   "http://api.napster.com/v2.2/artists/top?apikey=MzAyNTYxNDktM2RiMi00ZTY2LWJhZWMtMDI0MmU2ODE1YTU1",
+//   {
+//     json: true,
+//   },
+//   (err, res, body) => {
+//     if (err) {
+//       return console.log(err);
+//     }
+//     console.log(res.statusCode);
+//     console.log(body);
+//   }
+// );
+// // -----------------------------------------
+
+// request(
+//   "http://api.napster.com/v2.2/artists/top",
+//   {
+//     json: true,
+//     qs: { apikey: "MzAyNTYxNDktM2RiMi00ZTY2LWJhZWMtMDI0MmU2ODE1YTU1" },
+//   },
+//   (err, res, body) => {
+//     if (err) {
+//       return console.log(err);
+//     }
+//     console.log(res.statusCode);
+//     console.log(body.artists[0]);
+//   }
+// );
