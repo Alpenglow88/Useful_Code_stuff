@@ -4,8 +4,10 @@
 
 # print(array[3])
 
-def rectangle_area(width, height):
-    area = width * height
-    return area
+x = 3
+if x == 3: print('x is 3')
 
-print(rectangle_area(3,4)) # Outputs "12"
+# Example 2
+
+x = 4
+if not x == 3: print('x is not 3')
