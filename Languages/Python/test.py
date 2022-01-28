@@ -1,13 +1,8 @@
+# array = [1, 2, 3, 4, 5]
 
-# array2 = [1, 2, 3]
-# array = [1, 2, 3, 'hello', 'marti']
 
-# print(array[3])
+# array = [1, 2, 3, 'Steve', 'Shabang']
 
-x = 3
-if x == 3: print('x is 3')
-
-# Example 2
-
-x = 4
-if not x == 3: print('x is not 3')
+# for x in range(1, 10):
+my_name= "raushan"
+print(f"Let's talk about {my_name}.")
