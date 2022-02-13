@@ -1,0 +1,4 @@
+Poetry is a package manager (similar to Pip)
+
+To install:
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
