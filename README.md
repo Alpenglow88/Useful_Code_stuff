@@ -11,6 +11,7 @@ Currently this repo supports the following languages to some degree or another:
 
 * [Ruby](./Languages/Ruby)
 * [Javascript](./Languages/Javascript)
+* [Python](./Languages/Python)
 * [Java](./Languages/Java)
 * [SQL](./Languages/SQL)
 
@@ -21,6 +22,7 @@ There are test files that are included here so that you can try out any piece of
 |----------|-------------|----------|
 |Ruby|Ruby|ruby test.rb|
 |Javascript|Node|node test.js|
+|Python|Python X.X|python test.py|
 
 # Page Object Frameworks [WIP]
 These are example projects that should serve to show how to setup a page object model testing framework, as well as add to them for future use.

@@ -20,5 +20,6 @@
         "statusBar.background": "#3646f4",
         "statusBarItem.hoverBackground": "#ea3e0d",
         "statusBar.foreground": "#15202b"
-    }
+    },
+    "python.formatting.provider": "black"
 }

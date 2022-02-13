@@ -5,4 +5,11 @@
 
 # for x in range(1, 10):
 my_name= "raushan"
-print(f"Let's talk about {my_name}.")
+# print(f"Let's talk about {my_name}.")
+
+# print(my_name)
+
+def functionOne():
+    print("hello")
+
+functionOne()
